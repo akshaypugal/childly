@@ -9,7 +9,7 @@ import {Chips} from 'primereact/chips';
 import {Dropdown} from 'primereact/dropdown';
 import {MultiSelect} from 'primereact/multiselect';
 import {CountryService} from '../service/CountryService';
-
+import {styles} from '../App.css';
 export const FloatLabelDemo = () => {
 
     const [countries, setCountries] = useState([]);
@@ -32,7 +32,11 @@ export const FloatLabelDemo = () => {
         {name: 'Istanbul', code: 'IST'},
         {name: 'Paris', code: 'PRS'},
     ];
-
+    function adjustInputSize(inputValue) {
+        var inputField = document.getElementById("inputField");
+        var inputWidth = inputValue.length * 10; // Adjust the multiplier based on your font size and desired spacing
+        inputField.style.width = inputWidth + "px";
+    }
     useEffect(() => {
         const countryService = new CountryService();
         countryService.getCountries().then((countries) => {

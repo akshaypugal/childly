@@ -33,6 +33,12 @@
   margin-top: 2rem;
   margin-bottom: 0;
 }
+.same{
+padding: 3px;
+
+
+}
+
 
 .input-demo .p-multiselect {
   min-width: 15rem;

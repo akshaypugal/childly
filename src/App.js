@@ -148,7 +148,7 @@ const App = () => {
         {
             label: 'Main Menu', icon: 'pi pi-fw pi-sitemap',
             items: [
-                {label: 'Form Layout', icon: 'pi pi-fw pi-id-card', to: '/formlayout'},
+                {label: 'Screen free', icon: 'pi pi-fw pi-id-card', to: '/formlayout'},
               
                
                

@@ -387,15 +387,6 @@ export const MenuDemo = () => {
                     <Menubar model={nestedMenuitems} end={menubarEndTemplate}></Menubar>
                 </div>
             </div>
-
-         
-
-
-
-         
-
-           
-
         </div>
     )
 }
